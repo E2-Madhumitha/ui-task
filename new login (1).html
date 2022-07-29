@@ -1,4 +1,4 @@
-
+<!-- 
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/new login.css">
@@ -17,4 +17,76 @@
             
         </div>
     </body>
+</html> -->
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/new login.css">
+<title>Login Page</title>
+
+<body>
+
+    <div class="full formDesign">
+
+        <div class="fullform">
+            <div class="loginTxt">
+                <p class="message"><b>LOGIN</b></p>
+            </div>
+            <div class="username">
+
+                <input type="text" id="name" placeholder="username">
+                <span id="nameerror"></span>
+            </div>
+            <div class="password">
+                <input type="password" id="pass" placeholder="password">
+                <span id="passerror"></span>
+            </div>
+            <div class="but">
+                <button type="submit" onclick="errorMessage(); emptyMsg();">
+                    Login
+                </button>
+            </div>
+
+            <div class="link">
+                <a href="https://support.google.com/accounts/answer/27441?hl=en">
+                    <h5>Forget Password?</h5>
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script>
+        function errorMessage() {
+            var username = document.getElementById('name').value;
+            var uname = document.getElementById("nameerror")
+            if ((document.getElementById("name").value == "")) {
+                uname.textContent = "This field is Required"
+                uname.style.color = "red"
+            } else {
+                uname.textContent = ""
+            }
+            console.log(username);
+        }
+
+
+        function emptyMsg() {
+            var userpassword = document.getElementById('pass').value;
+            var upass = document.getElementById("passerror")
+            if ((document.getElementById("pass").value == "")) {
+                upass.textContent = "This field is Required"
+                upass.style.color =  "red"
+            }
+            else {
+                upass.textContent = ""
+            }
+
+            console.log(userpassword);
+        }
+
+    </script>
+
+</body>
+
 </html>
