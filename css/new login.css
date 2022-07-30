@@ -1,138 +1,19 @@
-/* html{
-        height: 100%;
-        width: 100%;
-        margin: 0px;
-       
-        background-image:url('assets/pink.jpg');
-        background-repeat:no-repeat;
-        background-size:cover;
-    }
-    body{
-      height: 100%;
-        width: 100%;
-        margin:0px;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-    }
-    .full{
-    height:90%;
-    width:100%;
-          
-          padding:30px;
-       flex-direction: column;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-          text-align: center;
-    }
-    form{
-      height:60%;
-      width:30%;
-      flex-direction: column;
-      display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-
-        background:rgba(6, 16, 110, 0.363);
-        border-radius:2%;
-       
-    }
-    .full input {
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      outline: 0;
-      background: #f2f2f2;
-      height:10%;
-      width:90%;
-      border-radius: 3px;
-      margin:10px;
-      padding: 15px;
-      font-size: 14px;
-    }
-    .full button {
-      height:10%;
-      width: 40%;
-      flex-direction: column;
-      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      background: rgba(255, 156, 234, 0.966);
-      border: 3px solid black;
-      padding: 10px;
-      border-radius: 8px;
-      color: #000000;
-      font-size: 14px;
-      cursor: pointer;
-      margin:10px;
-      align-items: center;
-      justify-content: center;
-   
-     
-
-     
-  
-    }
-    a{
-      text-decoration: none;
-    }
-    .full button:hover{
-      background: #c12073;
-      color:aqua;
-    }
-    .full .message {
-      color: #000000;
-      font-size:30px; 
-      margin:2px;
-    }
-    
-      
-
-    
-
-   
-
-    
- 
-  @media only screen and (max-width: 768px) {
-    .full {
-       width:60%;
-       height:60%;
-   }
-   .full form{width:96%;
-   height:100%;
-}}
-@media only screen and (min-device-width : 320px) and (max-device-width : 640px)   {
-   .full {
-       width:60%;
-       height:40%;
-   }
-   .full form{width:96%;
-    height:100%;}
-}
-  
-  
-  /*29jul22 changed for validation*/
-  
-  
-   */
-
-   html{
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-    background-image:url('https://images.unsplash.com/photo-1520052205864-92d242b3a76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80');
-    background-repeat:no-repeat;
-    background-size:cover;
+html{
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-image:url('https://images.unsplash.com/photo-1520052205864-92d242b3a76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80');
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 body{
-  height: 100%;
-    width: 100%;
-    margin:0px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+height: 100%;
+  width: 100%;
+  margin:0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 .full{
 height:90%;
@@ -146,78 +27,78 @@ justify-content: center;
 text-align: center;
 }
 .formDesign{
-  height:55%;
-  width:28%;
-  flex-direction: column;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background:rgba(6, 16, 110, 0.363);
-  backdrop-filter: 5px;
-  border-radius:2%;
-   
+height:55%;
+width:28%;
+flex-direction: column;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+background:rgba(6, 16, 110, 0.363);
+backdrop-filter: 5px;
+border-radius:2%;
+ 
 }
 
 .full input {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  height:10%;
-  width:90%;
-  border-radius: 3px;
-  margin:10px;
-  padding: 15px;
-  font-size: 14px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+outline: 0;
+background: #f2f2f2;
+height:10%;
+width:90%;
+border-radius: 3px;
+margin:10px;
+padding: 15px;
+font-size: 14px;
 }
 .full button {
-  height:10%;
-  width: 40%;
-  flex-direction: column;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background: rgba(255, 156, 234, 0.966);
-  border: 3px solid black;
-  padding: 10px;
-  border-radius: 8px;
-  color: #000000;
-  font-size: 14px;
-  cursor: pointer;
-  margin:10px;
-  align-items: center;
-  justify-content: center;
+height:10%;
+width: 40%;
+flex-direction: column;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+background: rgba(255, 156, 234, 0.966);
+border: 3px solid black;
+padding: 10px;
+border-radius: 8px;
+color: #000000;
+font-size: 14px;
+cursor: pointer;
+margin:10px;
+align-items: center;
+justify-content: center;
 
- 
 
- 
+
+
 
 }
 a{
-  text-decoration: none;
+text-decoration: none;
 }
 .full button:hover{
-  background: #c12073;
-  color:aqua;
+background: #c12073;
+color:aqua;
 }
 .full .message {
-  color: #000000;
-  font-size:30px; 
-  margin:2px;
+color: #000000;
+font-size:30px; 
+margin:2px;
 }
 
-  
+
 
 @media only screen and (max-width: 768px) {
 .full {
-   width:39%;
-   height:56%;
+ width:46%;
+ height:56%;
 }
 .full form{width:96%;
 height:100%;
 }}
 @media only screen and (min-device-width : 320px) and (max-device-width : 640px)   {
 .full {
-   width:60%;
-   height:40%;
+ width:60%;
+ height:40%;
 }
 .full form{width:96%;
 height:100%;}
