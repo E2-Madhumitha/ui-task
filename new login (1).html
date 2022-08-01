@@ -13,11 +13,11 @@
             </div>
             <div class="username">
 
-                <input type="text" id="name" placeholder="username">
+                <input type="text" id="name" onblur="errorMessage()" onkeyup="errorMessage()" placeholder="username">
                 <span id="nameerror"></span>
             </div>
             <div class="password">
-                <input type="password" id="pass" placeholder="password">
+                <input type="password" id="pass"  onblur="emptyMsg()" onkeyup="emptyMsg()" placeholder="password">
                 <span id="passerror"></span>
             </div>
             <div class="but">
@@ -38,7 +38,6 @@
     </div>
     <script>
         function errorMessage() {
-            var username = document.getElementById('name').value;
             var uname = document.getElementById("nameerror")
             if ((document.getElementById("name").value == "")) {
                 uname.textContent = "This field is Required"
@@ -46,12 +45,10 @@
             } else {
                 uname.textContent = ""
             }
-            console.log(username);
         }
 
 
         function emptyMsg() {
-            var userpassword = document.getElementById('pass').value;
             var upass = document.getElementById("passerror")
             if ((document.getElementById("pass").value == "")) {
                 upass.textContent = "This field is Required"
@@ -60,8 +57,6 @@
             else {
                 upass.textContent = ""
             }
-
-            console.log(userpassword);
         }
 
     </script>
