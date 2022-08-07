@@ -48,7 +48,7 @@ let listDisplay=function()
       <p>${x.age}</p>
       <span class="options">
       <button class="edit" onclick="editList(this)"><b>EDIT</b></button>
-      <button class="delete" onclick="deleteList(this)"><b>DELETE</b></button>
+      <button class="delete" onclick="deleteList(this);listDisplay()"><b>DELETE</b></button>
       </span>
     </div>
     `);
