@@ -1,0 +1,304 @@
+body > table{
+    width: 80%;
+}
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+
+:root {
+    --modal-duration: 1s;
+    --modal-color: #428bca;
+}
+html{
+    height:100%;
+    width:100%;
+    margin: 0px;
+  }
+  
+  header{
+    margin: 0px;
+    height: 10%;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(78 134 206 / 35%);
+    cursor: pointer;
+  }
+  
+  
+      .head{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content:center;
+        width: 80%;
+        height: 100%;
+      }
+      .head span{
+        font-size: 27px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+       
+      }
+  
+        .designbtn{
+          height:73%;
+          width:20%;
+          justify-content: center;
+          display: flex;
+          align-items: center;
+        }
+        .designbtn button{
+          height:90%;
+          width:100%;
+          border: 3px solid black;
+          padding: 10px;
+          border-radius: 8px;
+          background: #428bca;
+          font-size: 14px;
+          cursor: pointer;
+          margin: 10px;
+          align-items: center;
+          justify-content: center;
+          font-family: cursive;
+          color:white;
+        }
+        .designbtn button:hover {
+            background: #3876ac;
+        }
+        
+  
+  body{    
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    background-color:lightgray;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .modal-content {
+    height: 40%;
+    width: 35%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;/* popup opacity */
+    animation-duration: var(--modal-duration);
+  }
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+    .modal-header {
+    
+      height: 15%;
+      width: 100%;
+      display:flex;
+      background: var(--modal-color);
+      color: #fff;
+
+    }
+  
+      .modal-header p{
+        font-family:cursive;
+        height: 100%;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+      }
+  
+      .modal-header button{
+      text-decoration: none;
+      background-color: #428bca;
+      color: white;
+      height: 100%;
+      width: 20%;
+      border:0px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      }
+  
+      .close {
+        color: #ccc;
+        float: right;
+        font-size: 30px;
+        color: #fff;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;/*focus pointer*/
+      }
+     
+  
+    .modal-body {
+      height: 70%;
+      width: 100%;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      }
+      .modal-body p{
+        height: 100%;
+        width: 80%;
+        font-size: 15px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+      }
+      .name,.age {
+        height:50%;
+        width:100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .modal-body input{
+        height: 35%;
+        width: 80%;
+      }
+      
+      .modal-body label{
+        font-size: 20px;
+        color: rgb(0, 3, 10);
+        height: 35%;
+        width: 80%;
+      }
+      .modal-body span{
+        height: 30%;
+        width: 80%;
+        color: red;
+        text-align: center;
+        font-size: 17px;
+      }
+  
+    .modal-footer {
+      background-color: rgb(255, 255, 255);
+      height:15%;
+      width:100%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      }
+      
+      .modal-footer button{
+  height:70%;
+  width:50%;
+  flex-direction: column;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: #428bca;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+      }
+      
+      .modal-footer button:hover{
+        background: #3876ac;
+      }
+  
+  
+  
+  .container{
+    height: 90%;
+    width: 100%;
+    align-items: center;
+    overflow-y: scroll;/*y axis scroll*/
+    background:lightsteelblue;
+  }

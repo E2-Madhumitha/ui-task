@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>simple modal</title>
+    <link rel="stylesheet" href="styles (1) (1).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    </head>
+    <body>
+    <div class="full">
+      <div id="addd">
+         <div class="title">
+              <span> TODO TASK</span>
+         </div>
+         <div class="btn">
+            <button id="modal-btn" class="button">ADD STUDENT</button>
+         </div>
+     </div>
+    
+    
+        <div class="todolist">
+           <h4>TODO LIST</h4>
+           <div id="head">
+            <p>Student name</p>
+            <p>Student age</p>
+            <span class="options">
+                <i  class="fa-solid fa-pen-to-square"></i>
+                <i  class="fa-solid fa-trash-can"></i>
+            </span>
+      </div>
+            <div id="list">
+            
+            </div>
+              <form id="form">
+                  <div id="my-modal" class="modal">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <span class="close">&times;</span>
+                             <p>STUDENT FORM</p>
+                        </div>
+                            <div class="modal-body">
+                                  <div class="name">
+                                       <label>Student Name</label>
+                                  <input type="text" placeholder="Name" id="nameIp">
+                                  </div>
+                                    <div class="age">
+                                       <label>Student Age</label>
+                                       <input type="value" placeholder="Age" id="ageIp">
+                                    </div>
+                                  <div id="msg"></div>
+                            <div class="but">
+                             <button id="submit" type="submit" onsubmit="validation()" onclick="validation()" onkeyup="validation()" onblur="validation()"> SUBMIT</button>
+                            </div>
+                          </div>
+                       </div>
+                  </div>
+             </form>
+       </div>
+      <script src="script (1) (1).js"></script>
+  </div>
+</body>
+
+</html>

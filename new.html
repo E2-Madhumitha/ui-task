@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       todo
+    </title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="head"> <span> TODO TASK</span></div>
+        <div class="designbtn"><button id="modal-btn">ADD STUDENT</button></div>
+      </header>
+    
+      <div id="my-modal" class="modal">
+        <div class="modal-content">
+            <form  onsubmit="event.preventDefault();onFormSubmit();" id="formContainer" autocomplete="off">
+              <div class="modal-header">
+                <p>STUDENT FORM</p>
+                <button type="button" class="close" id="submit" onclick="closeForm()">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="name">
+                <label><p>STUDENT NAME</p></label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                <input id="studentName" type="text"  onblur="errorMessage()"onkeyup="errorMessage()" placeholder="Name"required> 
+                <span id="error"></span>
+            </div>
+            <div class="age">
+                <label><p>STUDENT AGE</p></label>
+                <input id="studentAge" type="text" onblur="errorMsg()"onkeyup="errorMsg()" placeholder="Age"required> 
+                <span id="error1"></span>
+            </div>
+              </div>
+              <div class="modal-footer">
+                <button  type="submit" onclick="closeModal(),errorMessage(),errorMsg()"  id="closing">SUBMIT</button>
+                
+              </div>
+            </form>
+        </div>
+      </div>
+    
+            <div class="container">
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>studentName</th>
+                            <th>studentAge</th>
+                            
+                            <th><i class="fa-solid fa-pen-to-square"></i>
+                                <i class="fa-solid fa-trash-can"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        
+        </div>
+   
+    <script src="new.js"></script>
+</body>
+
+</html>
